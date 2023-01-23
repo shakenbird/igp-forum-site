@@ -12,13 +12,6 @@ export default function Home() {
         <meta http-equiv="refresh" content="0;URL='/posts'" />    
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          This page should redirect you. If not, enable JavaScript.
-        </h1>
-
-      </main>
-
     </div>
   )
 }
