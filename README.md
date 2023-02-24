@@ -27,7 +27,8 @@ author: shaken-bird
 ---
 ```
 *For the `createdAt` section, put the date you created the post at in the format `YYYY-MM-DD`*
-*For the `author` section, put the username that you named the JSON file without the `.JSON`, not the name you put in the JSON file. For example, I named my author file `shaken-bird.json`, so I put `shaken-bird` as the author.
+
+*For the `author` section, put the username that you named the JSON file without the `.JSON`, not the name you put in the JSON file. For example, I named my author file `shaken-bird.json`, so I put `shaken-bird` as the author.*
 
 Below that you can use regular markdown for your post. It seems complicated so let me know if you have any questions! When you're done just make a pull request and we'll review it.
 - shakenbird
