@@ -16,8 +16,7 @@ export default function Post({ post }) {
       <Head>
         <title>{post.title}</title>
         <meta name="description" content={post.excerpt} />
-        <link rel="icon" href="/favicon.ico" />
-        <meta http-equiv="refresh" content="0;URL='/posts'" />    
+        <link rel="icon" href="/favicon.ico" />   
       </Head>
       <h1>{post.title}</h1>
 
