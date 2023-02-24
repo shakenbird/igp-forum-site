@@ -9,12 +9,6 @@ export default function App({ Component, pageProps }) {
         <nav>
           <ul>
             <li>
-              <Link href="/">
-                Home
-              </Link>
-            </li>
-
-            <li>
               <Link href="/posts">
                 Posts
               </Link>
@@ -23,6 +17,11 @@ export default function App({ Component, pageProps }) {
             <li>
               <Link href="/authors">
                 Authors
+              </Link>
+            </li>
+            <li>
+              <Link href="https://github.com/shakenbird/igp-forum-site/blob/main/README.md">
+                Create post
               </Link>
             </li>
           </ul>
