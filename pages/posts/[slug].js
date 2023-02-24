@@ -12,6 +12,12 @@ export default function Post({ post }) {
 
   return (
     <div className="post">
+      <Head>
+        <title>{post.title}</title>
+        <meta name="description" content={post.excerpt} />
+        <link rel="icon" href="/favicon.ico" />
+        <meta http-equiv="refresh" content="0;URL='/posts'" />    
+      </Head>
       <h1>{post.title}</h1>
 
       <div>
