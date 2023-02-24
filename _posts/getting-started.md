@@ -41,4 +41,4 @@ Now, helpers should have an easier time assisting in fixing your code. (Make sur
 - If everything here fails, like if the discord-bot-help channel is completely dead and you can't fix your problem, remember that there's always google.com that probably has a solution to something similar to your problem :)
 
 Thank you for taking the time to read
-- IGP team
+– IGP team
