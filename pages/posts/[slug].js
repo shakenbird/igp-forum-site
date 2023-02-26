@@ -14,8 +14,9 @@ export default function Post({ post }) {
   return (
     <div className="post">
       <Head>
-        <title>{post.title}</title>
+        <title>{post.title} | IGP Community Posts</title>
         <meta name="description" content={post.excerpt} />
+        <meta name="author" content={post.author.name} />
         <link rel="icon" href="/favicon.ico" />   
       </Head>
       <h1>{post.title}</h1>
