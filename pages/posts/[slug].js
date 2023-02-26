@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Head from 'next/head'
 
 import { getAllPosts, getAuthorBySlug, getPostBySlug } from '../../lib/api'
 
@@ -12,6 +13,11 @@ export default function Post({ post }) {
 
   return (
     <div className="post">
+      <Head>
+        <title>{post.title}</title>
+        <meta name="description" content={post.excerpt} />
+        <link rel="icon" href="/favicon.ico" />   
+      </Head>
       <h1>{post.title}</h1>
 
       <div>
