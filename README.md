@@ -13,6 +13,8 @@ In the file, paste the following and change the name to a short username, prefer
 }
 ```
 
+After that, go to the `public` directory and upload a jpg file for a PFP, with the same name as the author JSON file you created.
+
 ### Create your post!
 
 The next step is to create your post! Navigate to the `_posts/` directory and create a new MD file. Give it a short, relevant name, i.e. `hello-world.md`.
@@ -30,4 +32,4 @@ author: shaken-bird
 
 *For the `author` section, put the username that you named the JSON file without the `.JSON`, not the name you put in the JSON file. For example, I named my author file `shaken-bird.json`, so I put `shaken-bird` as the author.*
 
-Below that you can use regular markdown for your post. It seems complicated so let me know if you have any questions! When you're done just make a pull request and we'll review it.
+Below that you can use regular markdown for your post. Feel free to use resources like [the IGP URL shortener](https://igp.services) to simplify your articles. Contact us if you have any questions! When you're done just make a pull request and we'll review it.
