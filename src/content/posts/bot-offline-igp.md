@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: "How to use MongoDB for your Discord bot!"
+title: "My Discord bot is offline!"
 excerpt: "My bot offline - what to do?"
 createdAt: "2023-02-28"
 author: IGP
