@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: How to make a API request with axios
-excerpt: This posts is gonna explain to you how to do api request easily with axios package
-createdAt: 2023-03-02
+title: "How to make a API request with axios"
+excerpt: "This posts is gonna explain to you how to do api request easily with axios package"
+createdAt: "2023-03-02"
 author: IHZAQ
 ---
 
