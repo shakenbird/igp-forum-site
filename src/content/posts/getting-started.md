@@ -1,5 +1,5 @@
 ---
-layout: ../../Layouts/PostLayout.astro
+layout: ../../layouts/PostLayout.astro
 title: "How to make your Discord bot online!"
 excerpt: "This post compiles tips from the IGP Discord server into a single page on how to make your bot online."
 createdAt: "2023-02-24"

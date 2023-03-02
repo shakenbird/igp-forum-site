@@ -1,5 +1,5 @@
 ---
-layout: ../../Layouts/PostLayout.astro
+layout: ../../layouts/PostLayout.astro
 title: "How to use MongoDB for your Discord bot!"
 excerpt: "This post compiles tips from LonelyBall into a single page on how to use MongoDB for your bot."
 createdAt: "2023-02-28"

@@ -1,5 +1,5 @@
 ---
-layout: ../../Layouts/PostLayout.astro
+layout: ../../layouts/PostLayout.astro
 title: "How to ask for help?"
 excerpt: "In this blog, you will know how to ask for help in support servers."
 createdAt: "2023-02-27"
