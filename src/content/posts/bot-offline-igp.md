@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: "Bot Offline"
-excerpt: ""Help, my bot is offline! I'm here from a YouTube video whose creator goes by the name "Imagine Gaming Play". What to do?""
-createdAt: "2023-03-02"
+title: "How to use MongoDB for your Discord bot!"
+excerpt: "My bot offline - what to do?"
+createdAt: "2023-02-28"
 author: IGP
 ---
 
