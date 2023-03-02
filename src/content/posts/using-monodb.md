@@ -82,12 +82,12 @@ if (message.content.toLowerCase() === "add-word") {
 
 ```js
 if (message.content.toLowerCase() === "add-word") {
-  let data = await timerSchema.findOne({
+  let data = await schema.findOne({
     guild: message.guild.id,
   });
 
   if (!data) {
-    await timerSchema.create({ guild: message.guild.id });
+    await schema.create({ guild: message.guild.id });
     return message.reply(`Created DB`);
   }
 
@@ -100,12 +100,12 @@ if (message.content.toLowerCase() === "add-word") {
 ```js
 if (message.content.toLowerCase() === "add-word") {
   // add args if you want.
-  let data = await timerSchema.findOne({
+  let data = await schema.findOne({
     guild: message.guild.id,
   });
 
   if(!data){
-    await timerSchema.create({ guild: message.guild.id });
+    await schema.create({ guild: message.guild.id });
     return message.reply(`Created DB`);
   }
   
@@ -120,7 +120,7 @@ if (message.content.toLowerCase() === "add-word") {
 
 ```js
 if (message.content.toLowerCase() === "my-words") {
-  let data = await timerSchema.findOne({
+  let data = await schema.findOne({
     guild: message.guild.id,
   });
 
