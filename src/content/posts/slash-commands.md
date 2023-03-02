@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: How to make a slash command
 excerpt: This post is gonna explain how to make a slash command for your bot.
-createdAt: 2023-03-01
+createdAt: "2023-03-01"
 author: Aljo
 ---
 
