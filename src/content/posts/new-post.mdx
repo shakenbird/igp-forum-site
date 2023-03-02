@@ -1,0 +1,93 @@
+---
+layout: ../../layouts/PostLayout.astro
+title: How to create a new post
+excerpt: All about posts, and how to make them.
+createdAt: 2/28/23
+author: Duro
+---
+
+import { ClipboardDocumentIcon } from "@heroicons/react/24/solid";
+import Callout from "../../components/Callout";
+
+This post will have information regarding creating a new post on this website.
+
+<br />
+
+There are a few prerequisites to creating posts:
+
+<br />
+
+- You need a [GitHub](https://github.com) account.
+- Basic knowledge of Markdown and JavaScript.
+
+<br />
+
+## Forking the Repo
+
+A fork is a local copy of the repository that is on your GitHub account, and you can make changes on that repository.
+
+<br />
+
+<button class="bg-gray-100 hover:bg-gray-200 font-bold mb-6 px-4 py-2 rounded-xl inline-flex items-center gap-2 dark:(text-neutral-300 bg-neutral-800 hover:bg-neutral-700)">
+  <ClipboardDocumentIcon className="h-6" />
+  <p>Click here to fork</p>
+</button>
+
+After you make your fork, you can commit changes to that repository. Once you've made the changes you want, [create a pull request](https://github.com/shakenbird/igp-forum-site/pulls) on the main repository.
+
+<br />
+
+## Creating a Post
+
+You can create a post super easily by making a new file in the `src/content/posts` directory.
+
+<br />
+
+For example, you could create the file `hello.md`. Now, you need to fill in the frontmatter of the post. This stores basic data about the post.
+
+```md
+---
+layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the post gets properly styled
+title: the title of the post
+excerpt: a short description about the post
+createdAt: the date
+author: your name
+---
+
+**This is the content of the post.**
+```
+
+<br />
+
+## Adding an Author
+
+After creating a post, you may notice this error:
+
+```
+posts → new-post.md frontmatter does not match collection schema.
+Invalid enum value. Expected 'Duro' | 'JadeBetty' | 'shaken_bird' | 'IHZAQ', received 'somethign'
+```
+
+**This means that you have to add yourself as an author.**
+
+<br />
+
+This website uses Astro, which uses Zod for content collections validation.
+
+<br />
+
+This means that you have to add yourself as an author in the `src/util/authors.ts` file. You can do this super easily, just by extending the array.
+
+```ts
+// Before:
+export const AUTHORS = ["Duro", "shaken_bird"] as const;
+
+// After:
+export const AUTHORS = ["Duro", "shaken_bird", "your name"] as const;
+```
+
+## Author Image
+
+You can add an image for yourself by uploading an image to the `/public/authors` directory. Please make sure that is it spelt the exact same as your author username in the `src/util/authors.ts` file.
+
+<Callout type="info">Capitalization does not matter for the image file, make it all lower-case.</Callout>

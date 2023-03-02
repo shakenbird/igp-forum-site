@@ -1,18 +1,28 @@
 {
-  "name": "nextjs-multiauthor-blog-starter",
-  "version": "0.2.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev -p 3005",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "gray-matter": "4.0.3",
-    "next": "13.0.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "remark": "14.0.2",
-    "remark-html": "15.0.1"
-  }
+	"name": "igp-forum",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/mdx": "^0.17.2",
+		"@astrojs/react": "^2.0.2",
+		"@heroicons/react": "^2.0.16",
+		"@types/react": "^18.0.21",
+		"@types/react-dom": "^18.0.6",
+		"@unocss/reset": "^0.50.1",
+		"astro": "^2.0.15",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0"
+	},
+	"devDependencies": {
+		"typescript": "^4.9.5",
+		"unocss": "^0.50.1",
+		"unocss-preset-scrollbar": "^0.2.1"
+	}
 }
