@@ -7,6 +7,7 @@ author: Duro
 ---
 
 import { ClipboardDocumentIcon } from "@heroicons/react/24/solid";
+import Callout from "../../components/Callout";
 
 This post will have information regarding creating a new post on this website.
 
@@ -85,4 +86,8 @@ export const AUTHORS = ["Duro", "shaken_bird"] as const;
 export const AUTHORS = ["Duro", "shaken_bird", "your name"] as const;
 ```
 
-**Note:** Author usernames are case-sensitive.
+## Author Image
+
+You can add an image for yourself by uploading an image to the `/public/authors` directory. Please make sure that is it spelt the exact same as your author username in the `src/util/authors.ts` file.
+
+<Callout type="info">Capitalization does not matter for the image file, make it all lower-case.</Callout>
