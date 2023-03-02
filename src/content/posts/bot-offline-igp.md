@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PostLayout.astro 
+layout: ../../layouts/PostLayout.astro
 title: "Bot Offline"
 excerpt: ""Help, my bot is offline! I'm here from a YouTube video whose creator goes by the name "Imagine Gaming Play". What to do?""
 createdAt: "2023-03-02"
