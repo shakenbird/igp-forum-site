@@ -1,16 +1,15 @@
 ---
-import "@unocss/reset/tailwind.css";
-
 import type { z } from "astro:content";
 import type { postSchema } from "../content/config";
 import Header from "../components/Header.astro";
+import BaseHead from "../components/BaseHead.astro";
 
 export interface Props {
   content: z.TypeOf<typeof postSchema>;
 }
 
 const {
-  content: { title, createdAt, author },
+  content: { title, createdAt, author, excerpt, image },
 } = Astro.props;
 
 const pubDate = new Date(createdAt).toLocaleDateString("en-US", {
@@ -29,11 +28,7 @@ const authorIcon =
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <BaseHead title={title} description={excerpt} image={image} />
   </head>
 
   <body>
@@ -65,24 +60,25 @@ const authorIcon =
       </div>
       <slot />
     </article>
-  </body>
+  </body><script is:inline>
+    const theme = (() => {
+      if (
+        typeof localStorage !== "undefined" &&
+        localStorage.getItem("theme")
+      ) {
+        return localStorage.getItem("theme");
+      }
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        return "dark";
+      }
+      return "light";
+    })();
+
+    if (theme === "light") {
+      document.documentElement.classList.remove("dark");
+    } else {
+      document.documentElement.classList.add("dark");
+    }
+    window.localStorage.setItem("theme", theme);
+  </script>
 </html>
-
-<script is:inline>
-  const theme = (() => {
-    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
-      return localStorage.getItem("theme");
-    }
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    }
-    return "light";
-  })();
-
-  if (theme === "light") {
-    document.documentElement.classList.remove("dark");
-  } else {
-    document.documentElement.classList.add("dark");
-  }
-  window.localStorage.setItem("theme", theme);
-</script>

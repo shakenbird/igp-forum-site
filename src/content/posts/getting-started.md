@@ -6,7 +6,7 @@ createdAt: "2023-02-24"
 author: shaken-bird
 ---
 
-*Quick note, I didn't come up with most of the stuff in this article, it's compiled from multiple people in the server. Thanks to the following people:*
+_Quick note, I didn't come up with most of the stuff in this article, it's compiled from multiple people in the server. Thanks to the following people:_
 
 - Imagine#0219
 - Core#4786
