@@ -69,6 +69,10 @@ blockquote {
   --at-apply: "rounded-xl bg-themeBlack border border-neutral-800 p-4";
 }
 
+blockquote > p {
+  --at-apply: "text-neutral-300";
+}
+
 ul {
   --at-apply: "ml-8";
 }

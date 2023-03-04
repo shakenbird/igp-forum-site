@@ -4,9 +4,13 @@ import { AUTHORS } from '../util/authors';
 export const postSchema = z.object({
   title: z.string(),
   excerpt: z.string(),
-  createdAt: z.string().refine((str) => Date.parse(str), {
-    message: 'Please input a valid date.',
-  }),
+  createdAt: z.union([
+    z.date(), z.string()
+      .refine((str) => Date.parse(str), {
+        message: 'Please input a valid date.',
+      })
+  ]),
+  image: z.string().optional(),
   author: z.enum(AUTHORS)
 });
 

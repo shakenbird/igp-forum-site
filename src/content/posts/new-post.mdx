@@ -45,6 +45,8 @@ You can create a post super easily by making a new file in the `src/content/post
 
 For example, you could create the file `hello.md`. Now, you need to fill in the frontmatter of the post. This stores basic data about the post.
 
+<Callout type="info">You can also supply `image` and `slug` to the frontmatter.</Callout>
+
 ```md
 ---
 layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the post gets properly styled
@@ -90,4 +92,6 @@ export const AUTHORS = ["Duro", "shaken_bird", "your name"] as const;
 
 You can add an image for yourself by uploading an image to the `/public/authors` directory. Please make sure that is it spelt the exact same as your author username in the `src/util/authors.ts` file.
 
-<Callout type="info">Capitalization does not matter for the image file, make it all lower-case.</Callout>
+<Callout type="info">
+  Capitalization does not matter for the image file, make it all lower-case.
+</Callout>
