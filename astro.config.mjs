@@ -4,6 +4,7 @@ import mdx from "@astrojs/mdx";
 import react from "@astrojs/react";
 
 export default defineConfig({
+  site: 'https://posts.imaginegamingplay.com',
   integrations: [mdx(), unocss(), react()],
   markdown: {
     shikiConfig: {
