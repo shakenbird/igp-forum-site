@@ -23,12 +23,21 @@ const authorIcon =
     .map((v) => v.default.replace("/public", ""))
     .filter((v) => v.toLowerCase().includes(author.toLowerCase()))
     .at(0) ?? "/authors/default.png";
+
+const input = JSON.stringify({
+  title,
+  subtitle: `${excerpt} •${pubDate}`,
+});
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={title} description={excerpt} image={image} />
+    <BaseHead
+      title={title}
+      description={excerpt}
+      image={image ?? `https://og.duro.ml/api/igp?input=${input}`}
+    />
   </head>
 
   <body>
