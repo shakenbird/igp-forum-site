@@ -5,11 +5,11 @@ import Header from "../components/Header.astro";
 import BaseHead from "../components/BaseHead.astro";
 
 export interface Props {
-  content: z.TypeOf<typeof postSchema>;
+  content: z.TypeOf<typeof postSchema> & { readingTime: string };
 }
 
 const {
-  content: { title, createdAt, author, excerpt, image },
+  content: { title, createdAt, author, excerpt, image, readingTime },
 } = Astro.props;
 
 const pubDate = new Date(createdAt).toLocaleDateString("en-US", {
@@ -24,12 +24,9 @@ const authorIcon =
     .filter((v) => v.toLowerCase().includes(author.toLowerCase()))
     .at(0) ?? "/authors/default.png";
 
-const truncateString = (string = "", maxLength = 50) =>
-  string.length > maxLength ? `${string.substring(0, maxLength)}…` : string;
-
 const input = JSON.stringify({
   title,
-  subtitle: `${truncateString(excerpt)} • ${pubDate}`,
+  subtitle: `${pubDate} • ${readingTime}`,
 });
 ---
 

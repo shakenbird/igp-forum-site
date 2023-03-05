@@ -8,8 +8,10 @@ specifiers:
   '@types/react-dom': ^18.0.6
   '@unocss/reset': ^0.50.1
   astro: ^2.0.15
+  mdast-util-to-string: ^3.1.1
   react: ^18.0.0
   react-dom: ^18.0.0
+  reading-time: ^1.5.0
   typescript: ^4.9.5
   unocss: ^0.50.1
   unocss-preset-scrollbar: ^0.2.1
@@ -22,8 +24,10 @@ dependencies:
   '@types/react-dom': 18.0.11
   '@unocss/reset': 0.50.1
   astro: 2.0.15
+  mdast-util-to-string: 3.1.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  reading-time: 1.5.0
 
 devDependencies:
   typescript: 4.9.5
@@ -3039,6 +3043,10 @@ packages:
     dependencies:
       picomatch: 2.3.1
     dev: true
+
+  /reading-time/1.5.0:
+    resolution: {integrity: sha512-onYyVhBNr4CmAxFsKS7bz+uTLRakypIe4R+5A824vBSkQy/hB3fZepoVEf8OVAxzLvK+H/jm9TzpI3ETSm64Kg==}
+    dev: false
 
   /rehype-parse/8.0.4:
     resolution: {integrity: sha512-MJJKONunHjoTh4kc3dsM1v3C9kGrrxvA3U8PxZlP2SjH8RNUSrb+lF7Y0KVaUDnGH2QZ5vAn7ulkiajM9ifuqg==}
