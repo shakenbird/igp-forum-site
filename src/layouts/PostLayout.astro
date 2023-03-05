@@ -24,9 +24,12 @@ const authorIcon =
     .filter((v) => v.toLowerCase().includes(author.toLowerCase()))
     .at(0) ?? "/authors/default.png";
 
+const truncateString = (string = "", maxLength = 50) =>
+  string.length > maxLength ? `${string.substring(0, maxLength)}…` : string;
+
 const input = JSON.stringify({
   title,
-  subtitle: `${excerpt} •${pubDate}`,
+  subtitle: `${truncateString(excerpt)} • ${pubDate}`,
 });
 ---
 
