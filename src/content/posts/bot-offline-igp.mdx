@@ -7,6 +7,7 @@ author: IGP
 ---
 
 import Callout from "../../components/Callout";
+import YoutubeEmbed from "../../components/YoutubeEmbed";
 
 > "My bot is offline - I came from a YouTube video, **What DO I DO?**"
 
@@ -17,13 +18,13 @@ You can too! Just keep following this article!
 
 <br />
 
-<Callout type="error">
-If you're here from this video, https://youtu.be/k5BspQ9Czek, please watch this instead and come back here after finishing it. https://youtu.be/Gqurhm2QxA0
-</ Callout>
-
+If you're here from this video-
+<YoutubeEmbed videoId="k5BspQ9Czek" />
+please watch this instead and come back here after finishing it.
+<YoutubeEmbed videoId="Gqurhm2QxA0" />
 <br />
 
-If you're here from the `How to make a Discord Bot Without Downloading Anything + Host it Online FOREVER`, follow this tutorial!
+If you're here from the video mentioned above, keep following this article!
 Since the video has got a little outdated, there are some changes that you need to make.
 
 <br />
@@ -52,6 +53,7 @@ Skip the tutorial from the mark `3:35` to `4:11`. Since that step is not require
 
 Go back to the `Bot` tab in the Discord Developers portal website.
 https://discord.com/developers
+
 The same place where you copied your bot token on.
 Then locate the `MESSAGE CONTENT INTENT` option on the tab (scroll down a little to find it)
 Turn it on like and you're all set!
